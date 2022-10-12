@@ -1,4 +1,6 @@
 <?php
+  get_header();
+
   while(have_posts()) {
     the_post(); //keeps track of each post we are currently working on ?>
 
@@ -7,4 +9,6 @@
     <hr>
     <?php
   }
+
+  get_footer();
 ?>
