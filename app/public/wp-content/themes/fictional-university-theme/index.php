@@ -1,19 +1,17 @@
 <?php
-  // function myFirstFunction() {
-  //   echo "<p>Hello, this is a function</p>";
+  $names = array('Juliane', 'John', 'Jane', 'Meowsalot', 'Barksalot');
+
+  // $count = 1;
+
+  // while($count <= 100) {
+  //   echo "<li>$count</li>";
+  //   $count++;
   // }
 
-  // myFirstFunction();
-  // myFirstFunction();
-  // myFirstFunction();
+  $count = 0;
 
-  function greet($name, $color) {
-    echo "<p>Hi, my name is $name and my favorite color is $color.</p>";
+  while($count < count($names)) {
+    echo "<li>Hi, my name is $names[$count].</li>";
+    $count++;
   }
-
-  greet('John', 'blue');
-  greet('Jane', 'green');
 ?>
-
-<h1><?php bloginfo('name'); ?></h1>
-<p><?php bloginfo('description'); ?></p>
