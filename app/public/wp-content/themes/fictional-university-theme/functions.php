@@ -9,3 +9,9 @@ function university_files() {
 }
 
 add_action('wp_enqueue_scripts', 'university_files'); // tell wordpress to load a file (css/js)
+
+function university_features() {
+  add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'university_features');
